@@ -1,0 +1,93 @@
+body {
+  font-family: 'Noto Sans Bengali', 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.toggle-btn {
+  width: 100%;
+  background: #f0f4f8;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+.toggle-btn:hover, .toggle-btn:focus {
+  background: #e0e7ef;
+}
+.content {
+  padding: 1rem 1.5rem;
+  display: none;
+  animation: fadeIn 0.4s;
+}
+.card.active .content {
+  display: block;
+}
+ul {
+  padding-left: 1.2rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+th, td {
+  padding: 0.7rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+th {
+  background: #f0f4f8;
+  font-weight: 700;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  .card {
+    border-radius: 0.5rem;
+  }
+  th, td {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.3rem;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} 
